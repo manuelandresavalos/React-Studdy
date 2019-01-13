@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head>
+		<!-- example from https://www.taniarascia.com/getting-started-with-react/ -->
+    <meta charset="utf-8">
+
+    <title>Hello React!</title>
+
+    <script src="src/react.development-16-7-0.js"></script>
+    <script src="src/react-dom.development-16-7-0.js"></script>
+    <script src="src/babel-6-26-0.js"></script>
+</head>
+<body>
+
+    <div id="root"></div>
+    <script type="text/babel">
+    class StartingApp extends React.Component {
+			//Now we’ll add the render() method, the only required method 
+			//in a class component, which is used to render DOM nodes.
+			render() { 
+				return (
+					<h1>Hello React!</h1>
+				); 
+			} 	
+		}
+
+		ReactDOM.render(<StartingApp />, document.getElementById('root'));
+    </script>
+
+</body>
+</html>
